@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import tiles from "./assets/tiles.png";
 import { NAME_LIMIT, type Glyph } from "./data/charset";
 import { PRESETS } from "./data/presets";
 import { analyzeName, hexByte, isTypableChar, type NameState } from "./lib/glitch";
@@ -147,33 +148,45 @@ export default function App() {
   return (
     <main className="container">
       <div className="hero">
-        <h1>OLD MAN GLITCH CALCULATOR</h1>
-        <p>
-          When the old man in Viridian City shows you how to catch a Weedle, the game renames you
-          OLD MAN for a moment and has to put your real name somewhere. It picks the grass encounter
-          table. Viridian City has no grass, so nothing ever writes over it.
-        </p>
-        <p>
-          Then when you fly to Cinnabar Island and surf the east coast. Those shore tiles count as
-          grass, and the island has no encounter list of its own, so the game reads whatever is
-          still sitting in that table. Your name comes out of the water as five wild Pokémon.
-        </p>
-        <p>
-          Bulbapedia has the full write-up on the{" "}
-          <a
-            href="https://bulbapedia.bulbagarden.net/wiki/Old_man_glitch"
-            target="_blank"
-            rel="noreferrer"
-          >
-            old man glitch
-          </a>
-          .
-        </p>
-        <ol className="how">
-          <li>Watch the old man's Weedle tutorial in northern Viridian City.</li>
-          <li>Fly straight to Cinnabar Island. Don't walk out of town.</li>
-          <li>Surf the east coast tiles and nothing further.</li>
-        </ol>
+        <div className="hero-text">
+          <h1>OLD MAN GLITCH CALCULATOR</h1>
+          <p>
+            When the old man in Viridian City shows you how to catch a Weedle, the game renames you
+            OLD MAN for a moment and has to put your real name somewhere. It picks the grass
+            encounter table. Viridian City has no grass, so nothing ever writes over it.
+          </p>
+          <p>
+            Then when you fly to Cinnabar Island and surf the east coast. Those shore tiles count as
+            grass, and the island has no encounter list of its own, so the game reads whatever is
+            still sitting in that table. Your name comes out of the water as five wild Pokémon.
+          </p>
+          <p>
+            Bulbapedia has the full write-up on the{" "}
+            <a
+              href="https://bulbapedia.bulbagarden.net/wiki/Old_man_glitch"
+              target="_blank"
+              rel="noreferrer"
+            >
+              old man glitch
+            </a>
+            .
+          </p>
+          <ol className="how">
+            <li>Watch the old man's Weedle tutorial in northern Viridian City.</li>
+            <li>Fly straight to Cinnabar Island. Don't walk out of town.</li>
+            <li>Surf the east coast tiles and nothing further.</li>
+          </ol>
+        </div>
+
+        <figure className="map">
+          <img
+            src={tiles}
+            alt="Map of Cinnabar Island with the water tiles along the east shore highlighted"
+          />
+          <figcaption>
+            Surf the highlighted strip along the east shore, and nothing else.
+          </figcaption>
+        </figure>
       </div>
 
       <div className="preview">
