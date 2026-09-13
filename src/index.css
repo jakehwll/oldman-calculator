@@ -1,0 +1,349 @@
+@font-face {
+  font-family: PokeRBY;
+  src: url("./assets/pokerby.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: PokeUI;
+  src: url("./assets/pokeui.ttf") format("truetype");
+  font-display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+html {
+  min-height: 100vh;
+  background-color: #A5D6FF;
+  background-image: url("./assets/background.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-attachment: fixed;
+  image-rendering: pixelated;
+}
+
+body {
+  font-family: PokeRBY, monospace;
+  font-size: 16px;
+  line-height: 24px;
+  color: #202020;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  font-smooth: never;
+  image-rendering: pixelated;
+  padding: 32px 16px;
+}
+
+h1,
+h2,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+button {
+  all: unset;
+  font: inherit;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 32px;
+  max-width: 1200px;
+  width: 100%;
+  background: #f8f8f8;
+  border: 2px solid #000;
+  border-radius: 4px;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.how {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.how li {
+  padding-left: 32px;
+  position: relative;
+}
+
+.how li::before {
+  position: absolute;
+  left: 0;
+}
+
+.how li:nth-child(1)::before {
+  content: "1";
+}
+
+.how li:nth-child(2)::before {
+  content: "2";
+}
+
+.how li:nth-child(3)::before {
+  content: "3";
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 32px;
+  font-family: PokeUI, monospace;
+  line-height: 16px;
+}
+
+.namer {
+  display: inline-block;
+}
+
+.prompt {
+  margin-bottom: 16px;
+}
+
+.name {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2px;
+  margin: 0 16px 8px 160px;
+}
+
+.name span {
+  display: inline-block;
+  box-sizing: content-box;
+  width: 14px;
+  height: 16px;
+  padding-bottom: 6px;
+  border-bottom: 4px solid currentColor;
+}
+
+.name .blank.active {
+  position: relative;
+  bottom: 6px;
+}
+
+.frame {
+  display: inline-block;
+  image-rendering: pixelated;
+  border-style: solid;
+  border-width: 16px;
+  border-image: url("./assets/frame.png") 8 fill / 16px / 0 stretch;
+  padding: 0 0 0 16px;
+}
+
+.kb {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.kb-row {
+  display: grid;
+  grid-template-columns: repeat(9, 16px);
+  gap: 16px;
+}
+
+.kb-row button {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  white-space: pre;
+  text-align: center;
+}
+
+.kb-row button:focus {
+  outline: none;
+}
+
+.kb-row button:focus::before,
+.controls button:hover::before,
+.preset-list li.active::before,
+.preset-list li:hover::before {
+  content: "▶";
+  position: absolute;
+  left: -14px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 16px 0 0 20px;
+}
+
+.controls button {
+  position: relative;
+}
+
+.presets {
+  margin-top: 64px;
+}
+
+.presets .prompt {
+  margin: 0 16px 12px 0;
+}
+
+.preset-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 16px 8px 0;
+}
+
+.preset-list li {
+  position: relative;
+}
+
+.warning {
+  margin-bottom: 24px;
+  max-width: 60em;
+}
+
+.tape-card,
+.encounters {
+  display: block;
+  width: 100%;
+  padding: 8px 16px 16px 16px;
+  margin-bottom: 32px;
+}
+
+.tape-card h2,
+.encounters h2,
+.notes h2 {
+  margin-bottom: 16px;
+}
+
+.hint {
+  margin-bottom: 16px;
+}
+
+.tape {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-bottom: 16px;
+  font-family: PokeUI, monospace;
+  line-height: 16px;
+  text-align: center;
+}
+
+.pair {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pair-bytes {
+  display: flex;
+  gap: 8px;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 48px;
+}
+
+.cell .role,
+.cell .hx,
+.pair .role,
+.cell.null,
+.cell.end {
+  opacity: 0.7;
+}
+
+.cell .ch {
+  white-space: nowrap;
+}
+
+.notes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.party {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.party li {
+  display: flex;
+  gap: 16px;
+  white-space: nowrap;
+}
+
+.party .lv {
+  width: 112px;
+  flex: none;
+}
+
+.party .mon {
+  flex: 1;
+  min-width: 0;
+}
+
+.party .bytes {
+  opacity: 0.7;
+}
+
+.hero a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.hero a:hover {
+  opacity: 0.7;
+}
+
+.footer {
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 2px solid #000;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
