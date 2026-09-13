@@ -274,7 +274,8 @@ export default function App() {
       <section className="frame encounters">
         <h2>WILD ENCOUNTERS</h2>
         <p className="hint">
-          Encounter rate {analysis.glyphs[0].hex}. The higher it goes, the more often you find an encounter.
+          Encounter rate {analysis.glyphs[0].hex}. The higher it goes, the more often you find an
+          encounter.
         </p>
         <ol className="party">
           {analysis.encounters.map((encounter) => (
