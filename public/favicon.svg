@@ -1,7 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="crispEdges">
+  <title>MissingNo.</title>
   <rect width="16" height="16" fill="#202020"/>
-  <circle cx="8" cy="8" r="6" fill="#ee1515"/>
-  <path d="M2 8h12" stroke="#202020" stroke-width="2"/>
-  <path d="M2 8a6 6 0 0 0 12 0" fill="#f8f8f8"/>
-  <circle cx="8" cy="8" r="2" fill="#f8f8f8" stroke="#202020" stroke-width="1.5"/>
+  <!-- The backward-L silhouette of MissingNo.'s Red/Blue sprite: a tall column
+       on the right, stepping out to the left across the lower half. -->
+  <path d="M6 1h9v7h-9z M2 8h13v7h-13z" fill="#f8f8f8"/>
+  <g fill="#807098">
+    <rect x="7" y="1" width="1" height="1"/><rect x="9" y="1" width="1" height="1"/><rect x="12" y="1" width="1" height="1"/><rect x="14" y="1" width="1" height="1"/>
+    <rect x="6" y="2" width="1" height="1"/><rect x="10" y="2" width="1" height="1"/><rect x="11" y="2" width="1" height="1"/><rect x="13" y="2" width="1" height="1"/>
+    <rect x="8" y="3" width="1" height="1"/><rect x="9" y="3" width="1" height="1"/><rect x="14" y="3" width="1" height="1"/>
+    <rect x="6" y="4" width="1" height="1"/><rect x="7" y="4" width="1" height="1"/><rect x="11" y="4" width="1" height="1"/><rect x="13" y="4" width="1" height="1"/>
+    <rect x="9" y="5" width="1" height="1"/><rect x="10" y="5" width="1" height="1"/><rect x="12" y="5" width="1" height="1"/><rect x="14" y="5" width="1" height="1"/>
+    <rect x="6" y="6" width="1" height="1"/><rect x="8" y="6" width="1" height="1"/><rect x="11" y="6" width="1" height="1"/><rect x="12" y="6" width="1" height="1"/>
+    <rect x="7" y="7" width="1" height="1"/><rect x="10" y="7" width="1" height="1"/><rect x="13" y="7" width="1" height="1"/><rect x="14" y="7" width="1" height="1"/>
+    <rect x="3" y="8" width="1" height="1"/><rect x="5" y="8" width="1" height="1"/><rect x="8" y="8" width="1" height="1"/><rect x="9" y="8" width="1" height="1"/><rect x="12" y="8" width="1" height="1"/><rect x="14" y="8" width="1" height="1"/>
+    <rect x="2" y="9" width="1" height="1"/><rect x="4" y="9" width="1" height="1"/><rect x="7" y="9" width="1" height="1"/><rect x="10" y="9" width="1" height="1"/><rect x="11" y="9" width="1" height="1"/><rect x="13" y="9" width="1" height="1"/>
+    <rect x="3" y="10" width="1" height="1"/><rect x="6" y="10" width="1" height="1"/><rect x="8" y="10" width="1" height="1"/><rect x="12" y="10" width="1" height="1"/><rect x="14" y="10" width="1" height="1"/>
+    <rect x="2" y="11" width="1" height="1"/><rect x="5" y="11" width="1" height="1"/><rect x="9" y="11" width="1" height="1"/><rect x="10" y="11" width="1" height="1"/><rect x="13" y="11" width="1" height="1"/>
+    <rect x="4" y="12" width="1" height="1"/><rect x="6" y="12" width="1" height="1"/><rect x="7" y="12" width="1" height="1"/><rect x="11" y="12" width="1" height="1"/><rect x="14" y="12" width="1" height="1"/>
+    <rect x="2" y="13" width="1" height="1"/><rect x="3" y="13" width="1" height="1"/><rect x="9" y="13" width="1" height="1"/><rect x="12" y="13" width="1" height="1"/><rect x="13" y="13" width="1" height="1"/>
+    <rect x="5" y="14" width="1" height="1"/><rect x="7" y="14" width="1" height="1"/><rect x="8" y="14" width="1" height="1"/><rect x="10" y="14" width="1" height="1"/><rect x="14" y="14" width="1" height="1"/>
+  </g>
+  <g fill="#202020">
+    <rect x="12" y="3" width="1" height="1"/>
+    <rect x="7" y="5" width="1" height="1"/>
+    <rect x="9" y="7" width="1" height="1"/>
+    <rect x="5" y="10" width="1" height="1"/><rect x="11" y="10" width="1" height="1"/>
+    <rect x="8" y="12" width="1" height="1"/>
+    <rect x="6" y="13" width="1" height="1"/>
+    <rect x="3" y="14" width="1" height="1"/><rect x="11" y="14" width="1" height="1"/>
+  </g>
 </svg>
